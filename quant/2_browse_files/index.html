@@ -32,7 +32,9 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Browse reanalysis files", url: "#_top", children: [
+          {title: "Browse Metadata", url: "#_top", children: [
+          ]},
+          {title: "Browse Quantification Results", url: "#browse-quantification-results", children: [
           ]},
         ];
 
@@ -68,20 +70,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
+      <a href="../run_msstats_workflow/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../2_download_files/" class="btn btn-xs btn-link">
-        Download files
+      <a href="../run_msstats_workflow/" class="btn btn-xs btn-link">
+        MSstats Workflow
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../2_access_quant_3_reanalysis/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../2_access_quant_3_reanalysis/" class="btn btn-xs btn-link">
-        Reanalysis webpage
+        Previous</a><a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
@@ -89,11 +91,24 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h4 id="browse-reanalysis-files">Browse reanalysis files</h4>
-<p>You can browse the quantification results for your reanalysis by clicking on "Browse Quantification Results" from the reanalysis page:</p>
-<p><img alt="" src="../img/submit_quant_reanalyses/reanalysis_testing_result_iprg.png" /></p>
-<p>Also, you can browse the metadata for your reanalysis by clicking on "Browse Metadata" from the reanalysis page:
-<img alt="" src="../img/submit_quant_reanalyses/reanalysis_annotation_iprg.png" /></p>
+    <h3 id="browse-metadata">Browse Metadata</h3>
+<p>You can browse the metadata for the reanalysis by clicking on <strong>Browse Metadata</strong> from the reanalysis page:</p>
+<p><strong><em>todo : 1) new capture for summary table+red box mark</em></strong>
+<img alt="" src="../img/access_quant_reanalyses/reanalysis_annotation_iprg.png" /></p>
+<p>You will move to the new webpage to show the list of files under <code>Metadata</code> category.
+<strong><em>todo : 2) new capture for metadata page : list of files</em></strong></p>
+<p>Select one file and it will show how the file you select looks like. This is the example of annotation file for MSstats, which requires <em>Run</em> or <em>Raw.file</em>, <em>Condition</em>, <em>BioReplicate</em>. It can have many additional columns.</p>
+<p><strong><em>todo : 2) new capture for metadata webpage</em></strong></p>
+<h3 id="browse-quantification-results">Browse Quantification Results</h3>
+<p>You can browse the quantification results for the reanalysis by clicking on "Browse Quantification Results" from the reanalysis page:</p>
+<p><strong><em>todo : 1) new capture for summary table+red box mark</em></strong>
+<img alt="" src="../img/access_quant_reanalyses/reanalysis_testing_result_iprg.png" /></p>
+<p>You will move to the new webpage to show the list of files under <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.
+<strong><em>todo : 2) new capture for metadata page : list of files</em></strong></p>
+<p>Select one file, named xxx. It is under <code>Quantification Results</code>. This is the example of quantification result (MSstats reports) from MaxQuant. </p>
+<p><strong><em>todo : 2) new capture for metadata webpage</em></strong></p>
+<p>Select one file, named xxx. It is under `Statistical Analysis of Quantified Analytes. This is the example of the output of MSstats, using the quantification result from MaxQuant (named xxx, the file shown above).</p>
+<p><strong><em>todo : 2) new capture for metadata webpage</em></strong></p>
 
   <br>
     
@@ -106,20 +121,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
+      <a href="../run_msstats_workflow/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../2_download_files/" class="btn btn-xs btn-link">
-        Download files
+      <a href="../run_msstats_workflow/" class="btn btn-xs btn-link">
+        MSstats Workflow
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../2_access_quant_3_reanalysis/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../2_access_quant_3_reanalysis/" class="btn btn-xs btn-link">
-        Reanalysis webpage
+        Previous</a><a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
