@@ -32,6 +32,12 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Button : FTP Download", url: "#_top", children: [
+          ]},
+          {title: "Button : Browse Quantification Results", url: "#button-browse-quantification-results", children: [
+          ]},
+          {title: "Button : Browse Metadata", url: "#button-browse-metadata", children: [
+          ]},
         ];
 
     </script>
@@ -66,20 +72,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-right">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
-        Container webpage
+      <a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-link">
-        Step2 - Add Reanalysis
+        Previous</a><a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
+        Container webpage
       </a>
     </div>
     
@@ -95,12 +101,32 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 Owner column</p>
 <p>Reanalysis column</p>
 <p>experimental design part : Condition, Bioreplicate, TechReplicate part</p>
-<p>Condition : Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the "Metadata" category having a "Condition" column in this dataset.</p>
-<p>Biological Replicates: Number of distinct biological replicates across all analyses (original submission and reanalyses) associated with this dataset. Distinct replicate labels are counted across all files submitted in the "Metadata" category having a "BioReplicate" or "Replicate" column in this dataset.</p>
-<p>Technical Replicates: Number of distinct technical replicates across all analyses (original submission and reanalyses) associated with this dataset. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the "Metadata" category. In the case of fractionated experiments, only the first fraction is considered.</p>
+<ul>
+<li>
+<p><strong>Condition</strong>: Number of distinct conditions across all analyses (original submission and reanalyses) associated with this dataset. Distinct condition labels are counted across all files submitted in the <code>Metadata</code> category having a <code>Condition</code> column in this dataset.</p>
+</li>
+<li>
+<p><strong>Biological Replicates</strong>: Number of distinct biological replicates across all analyses (original submission and reanalyses) associated with this dataset. Distinct replicate labels are counted across all files submitted in the <code>Metadata</code> category having a <code>BioReplicate</code> or <code>Replicate</code> column in this dataset.</p>
+</li>
+<li>
+<p><strong>Technical Replicates</strong>: Number of distinct technical replicates across all analyses (original submission and reanalyses) associated with this dataset. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed across all files submitted in the <code>Metadata</code> category. In the case of fractionated experiments, only the first fraction is considered.</p>
+</li>
+</ul>
 <p>Quantification Result part :</p>
-<p>Differential proteins: Number of distinct proteins found to be differentially abundant in at least one comparison across all analyses (original submission and reanalyses) associated with this dataset. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value &lt;= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the “Statistical Analysis of Quantified Analytes” category having a "Protein" column in this dataset.</p>
-<p>Quantified proteins : Number of distinct proteins quantified across all analyses (original submission and reanalyses) associated with this dataset. Distinct protein accessions are counted across all files submitted in the “Statistical Analysis of Quantified Analytes” category having a "Protein" column in this dataset.</p>
+<ul>
+<li>
+<p><strong>Differential proteins</strong>: Number of distinct proteins found to be differentially abundant in at least one comparison across all analyses (original submission and reanalyses) associated with this dataset. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value &lt;= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the <code>Statistical Analysis of Quantified Analytes</code> category having a <code>Protein</code> column in this dataset.</p>
+</li>
+<li>
+<p><strong>Quantified proteins</strong>: Number of distinct proteins quantified across all analyses (original submission and reanalyses) associated with this dataset. Distinct protein accessions are counted across all files submitted in the <code>Statistical Analysis of Quantified Analytes</code> category having a <code>Protein</code> column in this dataset.</p>
+</li>
+</ul>
+<h3 id="button-ftp-download"><a href="../2_download_files/">Button : FTP Download</a></h3>
+<p>All the submitted files in the reanalysis are available for downloading from FTP. See <a href="../2_download_files/">here</a> for detailed instructions on how to download the files in any category.</p>
+<h3 id="button-browse-quantification-results"><a href="../2_browse_files/">Button : Browse Quantification Results</a></h3>
+<p>You can browse the quantification results for the reanalysis by clicking on <strong>Browse Quantification Results</strong> from the reanalysis page. See <a href="../2_browse_files/">here</a> for detailed instructions on how to browse the files in the <code>Quantification Result</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
+<h3 id="button-browse-metadata"><a href="../2_browse_files/">Button : Browse Metadata</a></h3>
+<p>You can browse the metadata for the reanalysis by clicking on <strong>Browse Metadata</strong> from the reanalysis page. See <a href="../2_browse_files/">here</a> for detailed instructions on how to browse the files in the <code>Metadata</code> category.</p>
 
   <br>
     
@@ -113,20 +139,20 @@ Owner column</p>
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-right">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
-        Container webpage
+      <a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-link">
-        Step2 - Add Reanalysis
+        Previous</a><a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
+        Container webpage
       </a>
     </div>
     

@@ -32,6 +32,16 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Reanalysis page", url: "#_top", children: [
+          ]},
+          {title: "Summary table for one reanalysis", url: "#summary-table-for-one-reanalysis", children: [
+          ]},
+          {title: "Button : FTP Download", url: "#button-ftp-download", children: [
+          ]},
+          {title: "Button : Browse Quantification Results", url: "#button-browse-quantification-results", children: [
+          ]},
+          {title: "Button : Browse Metadata", url: "#button-browse-metadata", children: [
+          ]},
         ];
 
     </script>
@@ -66,20 +76,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
+      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../2_download_files/" class="btn btn-xs btn-link">
-        Download files
+      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
+        Container webpage
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-left">
+      <a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
-        Container webpage
+        Previous</a><a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-link">
+        Step2 - Add Reanalysis
       </a>
     </div>
     
@@ -87,18 +97,48 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>Each individual reanalysis has its own page, as well (accessible from either the dataset or the container):</p>
-<p><strong>_todo : 1) new capture for whole page</strong>
+    <p>Each individual reanalysis has its own page. Here is the example of one reanalysis, RMSV000000248.29.</p>
+<h3 id="reanalysis-page">Reanalysis page</h3>
+<p>If you know the reanalysis ID, such as RMSV0000248.29, you can search in the main MassIVE webpage. Also you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.</p>
+<p><strong><em>todo : 1) new capture for whole page</em></strong>
 <img alt="" src="../img/access_quant_reanalyses/datasetpage_show_reanalysis_iprg.png" /></p>
-<p>title, description.</p>
-<p><strong>_todo : 2) new capture for summary table</strong>
-experimental design part : Condition, Bioreplicate, TechReplicate part</p>
-<p>Condition : Number of distinct conditions analyzed in this reanalysis. Distinct condition labels are counted across all files submitted in the “Metadata” category having a "Condition" column in this reanalysis.</p>
-<p>Biological Replicates: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the “Metadata” category having a "BioReplicate" or "Replicate" column in this reanalysis.</p>
-<p>Technical Replicates: Number of distinct technical replicates in this reanalysis. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed in files submitted in the “Metadata” category. In the case of fractionated experiments, only the first fraction is considered.</p>
-<p>Quantification Result part :</p>
-<p>Differential proteins: Number of distinct proteins found to be differentially abundant in at least one comparison in this reanalysis. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value &lt;= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the “Statistical Analysis of Quantified Analytes” category having a "Protein" column in this reanalysis.</p>
-<p>Quantified proteins : Number of distinct proteins quantified in this reanalysis. Distinct protein accessions are counted across all files submitted in the “Statistical Analysis of Quantified Analytes” category having a "Protein" column in this reanalysis.</p>
+<p>The title and description for this reanalysis are available here.</p>
+<h3 id="summary-table-for-one-reanalysis">Summary table for one reanalysis</h3>
+<p>There is the summary box on the left of this page. It shows the simple summary about experimental design and quantification/statistical analysis for this reanalysis.</p>
+<p><strong><em>todo : 2) new capture for summary table</em></strong></p>
+<ol>
+<li>
+<p><strong>Experimental Design</strong>: The summary of detected experimental design from <code>Metadata</code> category.</p>
+<ul>
+<li>
+<p><strong>Condition</strong>: Number of distinct conditions analyzed in this reanalysis. Distinct condition labels are counted across all files submitted in the <code>Metadata</code> category having a "Condition" column in this reanalysis. For this reanalysis, there are four conditions from 'annotation.csv' file in the <code>Metadata</code> category.</p>
+</li>
+<li>
+<p><strong>Biological Replicates</strong>: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the <code>Metadata</code> category having a <code>BioReplicate</code> or <code>Replicate</code> column in this reanalysis. For this reanalysis, there is <code>BioReplicate</code> column in 'annotation.csv' file. Four unique ID for biological replicates are available.</p>
+</li>
+<li>
+<p><strong>Technical Replicates</strong>: Number of distinct technical replicates in this reanalysis. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed in files submitted in the <code>Metadata</code> category. In the case of fractionated experiments, only the first fraction is considered. For this reanalysis, there is one file, called 'annotation.csv' in the <code>Metadata</code> category. Each biological replicate is assigned in one condition. There are three unique 'Run' for each biological replicate, which are the technical replicates for the corresponding biological replicate.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Quantification Result</strong>: The summary of the result for statistical analysis from <code>Statistical Analysis of Quantified Analytes</code> category</p>
+<ul>
+<li>
+<p><strong>Differential proteins</strong>: Number of distinct proteins found to be differentially abundant in at least one comparison in this reanalysis. A protein is differentially abundant if its change in abundance across conditions is found to be statistically significant with an adjusted p-value &lt;= 0.05 and lists no issues associated with statistical tests for differential abundance. Distinct protein accessions are counted across all files submitted in the <code>Statistical Analysis of Quantified Analytes</code> category having a <code>Protein</code> column in this reanalysis. For this reanalysis, there is one table for the result of statistical analysis in the <code>Statistical Analysis of Quantified Analytes</code> category (<em>Choi2017_DDA_MaxQuant_testResult_byMSstats.csv</em>). In this table, ten proteins are signigicantly different for at least one pairwise comparions. There are 'adj.pvalue' column and 'issue' column. The proteins ('Protein' column) and comparisons ('Label' column) with 'adj.pvalue' &lt;= 0.05 and 'issue' = NA are detected as statistically significant.</p>
+</li>
+<li>
+<p><strong>Quantified proteins</strong>: Number of distinct proteins quantified in this reanalysis. Distinct protein accessions are counted across all files submitted in the <code>Statistical Analysis of Quantified Analytes</code> category having a <code>Protein</code> column in this reanalysis. For this reanalysis, 2,875 proteins were quantified and tested by MSstats. The table for the result of statistical analysis in the <code>Statistical Analysis of Quantified Analytes</code> category (<em>Choi2017_DDA_MaxQuant_testResult_byMSstats.csv</em>) includes the result for 2.875 proteins.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="button-ftp-download"><a href="../2_download_files/">Button : FTP Download</a></h3>
+<p>All the submitted files in the reanalysis are available for downloading from FTP. See <a href="../2_download_files/">here</a> for detailed instructions on how to download the files in any category.</p>
+<h3 id="button-browse-quantification-results"><a href="../2_browse_files/">Button : Browse Quantification Results</a></h3>
+<p>You can browse the quantification results for the reanalysis by clicking on <strong>Browse Quantification Results</strong> from the reanalysis page. See <a href="../2_browse_files/">here</a> for detailed instructions on how to browse the files in the <code>Quantification Result</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
+<h3 id="button-browse-metadata"><a href="../2_browse_files/">Button : Browse Metadata</a></h3>
+<p>You can browse the metadata for the reanalysis by clicking on <strong>Browse Metadata</strong> from the reanalysis page. See <a href="../2_browse_files/">here</a> for detailed instructions on how to browse the files in the <code>Metadata</code> category.</p>
 
   <br>
     
@@ -111,20 +151,20 @@ experimental design part : Condition, Bioreplicate, TechReplicate part</p>
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../2_download_files/" class="btn btn-xs btn-default pull-right">
+      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../2_download_files/" class="btn btn-xs btn-link">
-        Download files
+      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
+        Container webpage
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../2_access_quant_2_container/" class="btn btn-xs btn-default pull-left">
+      <a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../2_access_quant_2_container/" class="btn btn-xs btn-link">
-        Container webpage
+        Previous</a><a href="../1_submit_quant_2_add_reanalysis/" class="btn btn-xs btn-link">
+        Step2 - Add Reanalysis
       </a>
     </div>
     
