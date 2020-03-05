@@ -37,9 +37,12 @@
           {title: "2.2 Workflow Selection and Reanalysis Metadata Sections", url: "#22-workflow-selection-and-reanalysis-metadata-sections", children: [
           ]},
           {title: "2.3 Reanalysis File Selection section", url: "#23-reanalysis-file-selection-section", children: [
-              {title: "Select reanalysis files (The most important steps!!)", url: "#select-reanalysis-files-the-most-important-steps" },
-              {title: "Examples : input and output using MSstats", url: "#examples-input-and-output-using-msstats" },
-              {title: "How to select file and selection", url: "#how-to-select-file-and-selection" },
+          ]},
+          {title: "Categories for Quant files (The most important steps!!)", url: "#categories-for-quant-files-the-most-important-steps", children: [
+          ]},
+          {title: "Examples: input and output using MSstats", url: "#examples-input-and-output-using-msstats", children: [
+          ]},
+          {title: "How to select file and selection", url: "#how-to-select-file-and-selection", children: [
           ]},
           {title: "2.4 Reanalysis Container Selection section", url: "#24-reanalysis-container-selection-section", children: [
           ]},
@@ -127,8 +130,8 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/file_selection_popup_iprg_full.png" />
 </center></p>
-<h4 id="select-reanalysis-files-the-most-important-steps">Select reanalysis files (The most important steps!!)</h4>
-<p>Then you can select valid reanalysis files in this step. Please choose the proper file selection. Here are more help on each of individual categories for quantification and statistical analysis results.</p>
+<h3 id="categories-for-quant-files-the-most-important-steps">Categories for Quant files (The most important steps!!)</h3>
+<p>You should select valid reanalysis files in this step. Please choose the proper category for each file. Here are more help on each of individual categories for quantification and statistical analysis results.</p>
 <table>
 <thead>
 <tr>
@@ -139,15 +142,19 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <tbody>
 <tr>
 <td>Quantification results</td>
-<td>Quantification result files from data processing tools/quantification tools. It should be used for downstream statistical analysis. For example, PSM-level or transition-level or protein-level quantified peak intensities data should be in this category.</td>
+<td>Quantification result files (reports) from data processing tools/quantification tools. It should be used for downstream statistical analysis. For example, PSM-level, transition-level, or protein-level quantified peak intensities data should be saved in this category.</td>
 </tr>
 <tr>
 <td>Metadata</td>
-<td>Information about design of experiments should be submitted in Metadata section. For example, annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition or group for the corresponding MS runs and corresponding channels.</td>
+<td>Information about design of experiments should be submitted in Metadata section. For example, annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition or group for the corresponding MS runs and corresponding channels. This annotation file should be saved in this category.</td>
 </tr>
 <tr>
 <td>Statisitical analysis of quantified analytes</td>
-<td>Result files for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section.</td>
+<td>Files including the results for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section.</td>
+</tr>
+<tr>
+<td>Methods and Protocols</td>
+<td>Any open-format files containing explanations or discussions of the xperimental procedures used to analyze this reanalysis. For example, R script used for this reanalysis, log files or txt or xml files to record version of tool/software or parameters used in tool/software. Even the pdf including experimental procedure in the publication.</td>
 </tr>
 <tr>
 <td>Supplementary</td>
@@ -155,8 +162,8 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 </tr>
 </tbody>
 </table>
-<h4 id="examples-input-and-output-using-msstats">Examples : input and output using MSstats</h4>
-<p>Here are the examples of quantification files and the output of MSstats for statistical analysis and their corresponding categories to submit.</p>
+<h3 id="examples-input-and-output-using-msstats">Examples: input and output using MSstats</h3>
+<p>Here are the examples of quantification files as the input of MSstats, the output of MSstats for statistical analysis, and their corresponding categories to submit.</p>
 <table>
 <thead>
 <tr>
@@ -197,6 +204,11 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <td>Methods and protocols</td>
 </tr>
 <tr>
+<td>--------------------</td>
+<td>------------------------</td>
+<td>-------------------------------------------</td>
+</tr>
+<tr>
 <td>MaxQuant</td>
 <td>evidence.txt</td>
 <td>Quantification results</td>
@@ -222,6 +234,11 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <td>Sequence database</td>
 </tr>
 <tr>
+<td>--------------------</td>
+<td>------------------------</td>
+<td>-------------------------------------------</td>
+</tr>
+<tr>
 <td>Spectronaut</td>
 <td>input.xls</td>
 <td>Quantification results</td>
@@ -230,6 +247,11 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <td></td>
 <td>SpectronautAnalysis.sne</td>
 <td>Supplementary files</td>
+</tr>
+<tr>
+<td>--------------------</td>
+<td>------------------------</td>
+<td>-------------------------------------------</td>
 </tr>
 <tr>
 <td>DIA-Umpire</td>
@@ -247,6 +269,11 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <td>Quantification results</td>
 </tr>
 <tr>
+<td>--------------------</td>
+<td>------------------------</td>
+<td>-------------------------------------------</td>
+</tr>
+<tr>
 <td>OpenSWATH</td>
 <td>input.tsv or input.txt</td>
 <td>Quantification results</td>
@@ -258,7 +285,7 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 </tr>
 </tbody>
 </table>
-<h4 id="how-to-select-file-and-selection">How to select file and selection</h4>
+<h3 id="how-to-select-file-and-selection">How to select file and selection</h3>
 <p><strong>!! new capture with number of selection</strong></p>
 <p>Once you've selected valid reanalysis files and proper categories, click "finish selection" buttons. You will be back to reanalysis attachment workflow input form.</p>
 <p><center>
