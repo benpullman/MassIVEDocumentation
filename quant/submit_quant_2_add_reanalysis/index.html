@@ -32,18 +32,18 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Select Dataset", url: "#_top", children: [
+          {title: "2.1 Select Dataset", url: "#_top", children: [
           ]},
-          {title: "Workflow Selection and Reanalysis Metadata Sections", url: "#workflow-selection-and-reanalysis-metadata-sections", children: [
+          {title: "2.2 Workflow Selection and Reanalysis Metadata Sections", url: "#22-workflow-selection-and-reanalysis-metadata-sections", children: [
           ]},
-          {title: "Reanalysis File Selection section", url: "#reanalysis-file-selection-section", children: [
+          {title: "2.3 Reanalysis File Selection section", url: "#23-reanalysis-file-selection-section", children: [
               {title: "Select reanalysis files (The most important steps!!)", url: "#select-reanalysis-files-the-most-important-steps" },
               {title: "Examples : input and output using MSstats", url: "#examples-input-and-output-using-msstats" },
               {title: "How to select file and selection", url: "#how-to-select-file-and-selection" },
           ]},
-          {title: "Reanalysis Container Selection section", url: "#reanalysis-container-selection-section", children: [
+          {title: "2.4 Reanalysis Container Selection section", url: "#24-reanalysis-container-selection-section", children: [
           ]},
-          {title: "Workflow Submission section", url: "#workflow-submission-section", children: [
+          {title: "2.5 Workflow Submission section", url: "#25-workflow-submission-section", children: [
           ]},
         ];
 
@@ -101,13 +101,13 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <p>Once your files are fully uploaded to your user account directory at MassIVE, then you are ready to submit your files as reanalysis. You must run the <strong>Add Reanalysis</strong> workflow on those files in order to submit your dataset as reanalysis in the dataset (under MSV).</p>
-<h3 id="select-dataset">Select Dataset</h3>
+<h3 id="21-select-dataset">2.1 Select Dataset</h3>
 <p>First, go to the webpage for the dataset you reanalyzed. You can search dataset MSV ID or PXD ID in <a href="../../access_public_datasets/#MassIVEDatasetBrowsing-ViewingaDataset">dataset's web page</a>.</p>
 <p>click the <strong>Add Reanalysis</strong> button:</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/add_reanalysis_button_iprg.png" />
 </center></p>
-<h3 id="workflow-selection-and-reanalysis-metadata-sections">Workflow Selection and Reanalysis Metadata Sections</h3>
+<h3 id="22-workflow-selection-and-reanalysis-metadata-sections">2.2 Workflow Selection and Reanalysis Metadata Sections</h3>
 <p><strong>Add Reanalysis</strong> button brings you to a MassIVE reanalysis attachment workflow input form.
 Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should be selected in <code>Workflow</code>. <code>Species</code>, <code>Instrument</code>, <code>Post-Translation Modifications</code> should be filled automatically from original submission. You should add </p>
 <ol>
@@ -117,8 +117,8 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/add_title_description_iprg.png" />
 </center></p>
-<p>For example, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' can be the <code>Title</code>. The short summary about the steps for reanalysis can be the <code>Description</code>, like 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'</p>
-<h3 id="reanalysis-file-selection-section">Reanalysis File Selection section</h3>
+<p>For example, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' can be the <code>Title</code>. The short summary about the steps for reanalysis can be the <code>Description</code>, for instance, 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'</p>
+<h3 id="23-reanalysis-file-selection-section">2.3 Reanalysis File Selection section</h3>
 <p>You should select all the files for your reanalysis by clicking any of <strong>Select Input Files</strong> buttons:</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/add_reanalysis_file_iprg.png" />
@@ -264,13 +264,13 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/file_selection_popup_done_iprg.png" />
 </center></p>
-<h3 id="reanalysis-container-selection-section">Reanalysis Container Selection section</h3>
+<h3 id="24-reanalysis-container-selection-section">2.4 Reanalysis Container Selection section</h3>
 <p>The reanalysis attachment workflow will determine which source datasets were reanalyzed, and will then prepare what's referred to as a "reanalysis container" for your attachment. A reanalysis container simply refers to the unique set of datasets that were reanalyzed - usually only one, but possibly more. The workflow then attaches your results to this container. Any other reanalysis results attached (by any user) to this same set of datasets will also go in the same container.</p>
 <p>For example, <code>Reanalysis Container</code> shows all containers for the source dataset. You can choose one of them or make <strong>New reanalysis container</strong>. If you select 'New reanalysis container', then you should put the title for this container in <code>Reanalysis Container Title</code>.</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/reanalysis_container_iprg.png" />
 </center></p>
-<h3 id="workflow-submission-section">Workflow Submission section</h3>
+<h3 id="25-workflow-submission-section">2.5 Workflow Submission section</h3>
 <p>Finally, you are ready to submit. Please type your email to get progress notice and click 'submit' buttom.</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/workflow_submission_done_iprg.png" />
