@@ -32,13 +32,20 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "Add Reanalysis workflow for quantification data", url: "#_top", children: [
-              {title: "Select Dataset", url: "#select-dataset" },
-              {title: "Workflow Selection and Reanalysis Metadata Sections", url: "#workflow-selection-and-reanalysis-metadata-sections" },
-              {title: "Reanalysis File Selection section", url: "#reanalysis-file-selection-section" },
-              {title: "Reanalysis Container Selection section", url: "#reanalysis-container-selection-section" },
-              {title: "Mapping Spectrum Files to Identfication Files section", url: "#mapping-spectrum-files-to-identfication-files-section" },
-              {title: "Workflow Submission section", url: "#workflow-submission-section" },
+          {title: "Select Dataset", url: "#_top", children: [
+          ]},
+          {title: "Workflow Selection and Reanalysis Metadata Sections", url: "#workflow-selection-and-reanalysis-metadata-sections", children: [
+          ]},
+          {title: "Reanalysis File Selection section", url: "#reanalysis-file-selection-section", children: [
+              {title: "Select reanalysis files (The most important steps!!)", url: "#select-reanalysis-files-the-most-important-steps" },
+              {title: "Examples : input and output using MSstats for differential abundance analysis", url: "#examples-input-and-output-using-msstats-for-differential-abundance-analysis" },
+              {title: "How to select file and selection", url: "#how-to-select-file-and-selection" },
+          ]},
+          {title: "Reanalysis Container Selection section", url: "#reanalysis-container-selection-section", children: [
+          ]},
+          {title: "Mapping Spectrum Files to Identfication Files section", url: "#mapping-spectrum-files-to-identfication-files-section", children: [
+          ]},
+          {title: "Workflow Submission section", url: "#workflow-submission-section", children: [
           ]},
         ];
 
@@ -95,8 +102,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h2 id="add-reanalysis-workflow-for-quantification-data">Add Reanalysis workflow for quantification data</h2>
-<p>Once your files are fully uploaded to your user account directory at MassIVE, then you must run the <strong>Add Reanalysis</strong> workflow on those files in order to submit your dataset as reanalysis in the dataset (under MSV).</p>
+    <p>Once your files are fully uploaded to your user account directory at MassIVE, then you are ready to submit your files as reanalysis. You must run the <strong>Add Reanalysis</strong> workflow on those files in order to submit your dataset as reanalysis in the dataset (under MSV).</p>
 <h3 id="select-dataset">Select Dataset</h3>
 <p>First, go to the webpage for the dataset you reanalyzed. You can search dataset MSV ID or PXD ID in <a href="../../access_public_datasets/#MassIVEDatasetBrowsing-ViewingaDataset">dataset's web page</a>.</p>
 <p>click the <strong>Add Reanalysis</strong> button:</p>
