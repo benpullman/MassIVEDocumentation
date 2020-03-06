@@ -92,30 +92,50 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <h3 id="browse-metadata">Browse Metadata</h3>
-<p>You can browse the metadata for the reanalysis by clicking on <strong>Browse Metadata</strong> from the reanalysis webpage <strong>(??? only from reanalysis webpage)</strong>. This button is activated only when any tabular-type file(s) is available in <code>Metadata</code> category.</p>
-<p><strong><em>todo : 1) new capture for summary table+ only red box mark</em></strong>
-<img alt="" src="../img/access_quant_reanalyses/reanalysis_annotation_iprg.png" /></p>
+<p>You can browse the metadata for the reanalysis by clicking on <strong>Browse Metadata</strong> from the reanalysis webpage. This button is activated only when any tabular-type file(s) is available in <code>Metadata</code> category.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_step1.png" /></p>
 <p>You will move to the new webpage to show the list of files under <code>Metadata</code> category.
 <img alt="" src="../img/access_quant_reanalyses/browse_metadata_step2.png" /></p>
 <p>Select one file name and it will show how the file looks like. This is the example of annotation file for MSstats, which requires <em>Run</em> or <em>Raw.file</em>, <em>Condition</em>, <em>BioReplicate</em>. It can have many additional columns.</p>
 <p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_step3.png" /></p>
 <p>You can filter the rows. Let's check the rows for 'Condition1'.</p>
 <ol>
-<li>Type 'Condition1' in the empty box in the first row and below the column name, 'Condition'.</li>
+<li>Type 'Condition1' in the empty box in the first row and below the column named 'Condition'.</li>
 <li>Click <code>Filter</code> button at the top left of table.</li>
 </ol>
-<p>Then, the rows with 'Condition1' for <code>Condition</code> column are shown. For this example, there are three raw files from 'Condition1'.</p>
+<p>Then, the rows with 'Condition1' for <code>Condition</code> column are shown. For this example, there are three Runs from 'Condition1'.</p>
 <p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_filtered.png" /></p>
 <p>If you want to remove filter and to see the whole table, remove 'Condition1' that you typed and click the same <code>Filter</code> button again.</p>
 <h3 id="browse-quantification-results">Browse Quantification Results</h3>
-<p>You can browse the quantification results for the reanalysis by clicking on <strong>Browse Quantification Results</strong> from the reanalysis webpage <strong>(??? only from reanalysis webpage)</strong>. This button is activated only when any tabular-type file(s) is available in <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
+<p>You can browse the quantification results for the reanalysis by clicking on <strong>Browse Quantification Results</strong> from the reanalysis webpage. This button is activated only when any tabular-type file(s) is available in <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
 <p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step1.png" /></p>
-<p>You will move to the new webpage to show the list of files under <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.
+<p>You will move to the new webpage to show the list of files under <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
+<p>Select one file, named <em>quant/Choi2017_DDA_Skyline_input.csv</em>. This file was submmited to <code>Quantification Results</code>. 
 <img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step2.png" /></p>
-<p>Select one file, named xxx. It is under <code>Quantification Results</code>. This is the example of quantification result (MSstats reports) from MaxQuant. </p>
-<p><strong><em>todo : 2) new capture for metadata webpage</em></strong></p>
-<p>Select one file, named xxx. It is under `Statistical Analysis of Quantified Analytes. This is the example of the output of MSstats, using the quantification result from MaxQuant (named xxx, the file shown above).</p>
-<p><strong><em>todo : 2) new capture for metadata webpage</em></strong></p>
+<p><strong><em>Note</em></strong>: The file size of quantification result could be big. If the webpage shows like below, please wait little more.
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_wait.png" /></p>
+<p>This is the example of quantification result (MSstats reports) from Skyline. </p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_quant.png" /></p>
+<p>Let's see another file. Select one file, named <em>quant_stats/Choi2017_DDA_Skyline_testResult_byMSstats.csv</em>. This file was submitted to <code>Statistical Analysis of Quantified Analytes</code>. 
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step3.png" /></p>
+<p>This is the example of the output of MSstats, using the quantification result from Skyline (named <em>Choi2017_DDA_Skyline_input.csv</em>, the file shown above).
+<img alt="" src="../img/access_quant_reanalyses/browse_quantresult_stats.png" /></p>
+<p>You can filter the rows. Let's check the rows for protein named 'sp|D6VTK4|STE2_YEAST'.</p>
+<ol>
+<li>Type 'sp|D6VTK4|STE2_YEAST' in the empty box in the first row and below the column named 'Protein'.</li>
+<li>Click <code>Filter</code> button at the top left of table.</li>
+</ol>
+<p>Then, the rows with 'sp|D6VTK4|STE2_YEAST' for <code>Protein</code> column are shown. There are six rows with different <code>Label</code>, which shows different pairwise comparisons</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_filtered_protein.png" /></p>
+<p>If you want to remove filter and to see the whole table, remove 'sp|D6VTK4|STE2_YEAST' that you typed and click the same <code>Filter</code> button again.</p>
+<p>Let's check the rows with significantly different proteins and comparisons.</p>
+<ol>
+<li>Type '0.5' in the second empty box in the first row and below the column named 'adj.pvalue'.</li>
+<li>Type 'NA' in the empty box in the first row and below the column nammed 'issue'.</li>
+<li>Click <code>Filter</code> button at the top left of table.</li>
+</ol>
+<p>Then, the rows with siginificantly differential abudunce are shown. There are 29 rows shown. Among 29 rows, there are 7 unique proteins.</p>
+<p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_filtered_sig.png" /></p>
 
   <br>
     
