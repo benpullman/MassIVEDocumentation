@@ -103,7 +103,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>Once your files are fully uploaded to your user account directory at MassIVE, then you are ready to submit your files as reanalysis. You must run the <strong>Add Reanalysis</strong> workflow on those files in order to submit your dataset as reanalysis in the dataset (under MSV).</p>
+    <p>Once your files are fully uploaded to your user account directory at MassIVE, you are ready to submit your files as a reanalysis. </p>
 <h3 id="21-select-dataset">2.1 Select Dataset</h3>
 <p>First, go to the webpage for the dataset you reanalyzed. You can search dataset MSV ID or PXD ID in <a href="../../access_public_datasets/#MassIVEDatasetBrowsing-ViewingaDataset">dataset's web page</a>.</p>
 <p>click the <strong>Add Reanalysis</strong> button:</p>
@@ -112,7 +112,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </center></p>
 <h3 id="22-workflow-selection-and-reanalysis-metadata-sections">2.2 Workflow Selection and Reanalysis Metadata Sections</h3>
 <p><strong>Add Reanalysis</strong> button brings you to a MassIVE reanalysis attachment workflow input form.
-Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should be selected in <code>Workflow</code>. <code>Species</code>, <code>Instrument</code>, <code>Post-Translation Modifications</code> should be filled automatically from original submission. You should add </p>
+At this point, the option <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should be automatically selected in <code>Workflow</code>. Information regarding <code>Species</code>, <code>Instrument</code>, <code>Post-Translation Modifications</code> should also be filled automatically, based on the original submission. You should add </p>
 <ol>
 <li>the title in <code>Title</code> (at least 30 characters)</li>
 <li>the description for this reanalysis in <code>Description</code> (at least 50 characters)</li>
@@ -120,18 +120,19 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/add_title_description_iprg.png" />
 </center></p>
-<p>For example, 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results' can be the <code>Title</code>. The short summary about the steps for reanalysis can be the <code>Description</code>, for instance, 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'</p>
+<p>Example of a <code>Title</code>: 'MassIVE.quant reanalysis from offline MaxQuant+MSstats results'
+Example of a <code>Description</code>: 'MassIVE.quant reanalysis of data from the iPRG2015 study (dataset MSV000079843) using Andromeda for identification and MaxQuant for quantification, followed by MSstats for statistical analysis of differentially abundant proteins.'</p>
 <h3 id="23-reanalysis-file-selection-section">2.3 Reanalysis File Selection section</h3>
 <p>You should select all the files for your reanalysis by clicking any of <strong>Select Input Files</strong> buttons:</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/add_reanalysis_file_iprg.png" />
 </center></p>
-<p>Then, file selection window should be popped up. The file selection pop-up window (below) browses your account to select the files you uploaded, as well as any other files you wish to attach for this reanalysis. You should find that the proper dataset is automatically imported to your account from when you clicked <code>Add Reanalysis</code> back on the dataset page. You can see that Raw spectrum files and Peak list files which are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.</p>
+<p>Next, the file selection pop-up window (below) helps you browses your account to select the files you uploaded, as well as any other files you wish to attach for this reanalysis. The original dataset should be automatically imported at this stage. You can see that Raw spectrum files and Peak list files which are available in MSV are already selected. At least one of Raw spectrum files from the original MSV should be selected to link this reanalysis with the original dataset.</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/file_selection_popup_iprg_full.png" />
 </center></p>
 <h3 id="categories-for-quant-files-important">Categories for Quant files (IMPORTANT!!)</h3>
-<p>You should select valid reanalysis files in this step. Please choose the proper category for each file. Here are more help on each of individual categories for quantification and statistical analysis results.</p>
+<p>You should select valid reanalysis files in this step. Please choose the proper category for each file. Here is more help on each of the individual categories for quantification and statistical analysis results.</p>
 <table>
 <thead>
 <tr>
@@ -146,15 +147,15 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 </tr>
 <tr>
 <td>Metadata</td>
-<td>Information about design of experiments should be submitted in Metadata section. For example, annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition or group for the corresponding MS runs and corresponding channels. This annotation file should be saved in this category.</td>
+<td>Information about the design of experiments should be submitted in the <code>Metadata</code> section. For example, an annotation file for MSstats should have the information about biological replicate, technical replicate, fraction, condition, or group for the corresponding MS runs and corresponding channels. This annotation file should be saved in this category.</td>
 </tr>
 <tr>
 <td>Statisitical analysis of quantified analytes</td>
-<td>Files including the results for statistical analysis. It could be the table or figure of result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis or pdf for figures can be saved in this section.</td>
+<td>Files including the results for statistical analysis. It could be the table or figure of the result for statistical analysis. For example, table (.txt, .csv), r data format for differential abundance analysis, or pdf for figures can be saved in this section.</td>
 </tr>
 <tr>
 <td>Methods and Protocols</td>
-<td>Any open-format files containing explanations or discussions of the xperimental procedures used to analyze this reanalysis. For example, R script used for this reanalysis, log files or txt or xml files to record version of tool/software or parameters used in tool/software. Even the pdf including experimental procedure in the publication.</td>
+<td>Any open-format files containing explanations or discussions of the xperimental procedures used to analyze this reanalysis. For example, R script used for this reanalysis, log files, or txt or xml files to record a version of tool/software or parameters used in tool/software. Even the pdf, including the experimental procedure in the publication.</td>
 </tr>
 <tr>
 <td>Supplementary</td>
@@ -268,8 +269,8 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <h3 id="how-to-select-the-files-and-category">How to select the file(s) and category</h3>
 <p>If you know which category should be selected for each file, let's start. Here is the example for <code>Quantification Results</code>.</p>
 <ol>
-<li>Select file(s) : <em>'Choi2017_DDA_Skyline_input.csv'</em> is the MSstats report from Skyline, which is precusor-level quantified data. It should be saved in <code>Quantification Results</code>. Click the file name(s) under your MassIVE account. Then file(s) will be highlighted.</li>
-<li>Select category : at the top-left conner, there are boxes for categories. Select (or Click) the box named <code>Quantification Results</code>.</li>
+<li>Select file(s): <em>'Choi2017_DDA_Skyline_input.csv'</em> is the MSstats report from Skyline, which is precursor-level quantified data. It should be saved in <code>Quantification Results</code>. Click the file name(s) under your MassIVE account. Then file(s) will be highlighted.</li>
+<li>Select category: at the top-left corner, there are boxes for categories. Select (or Click) the box named <code>Quantification Results</code>.</li>
 <li>Then, on the right panel, named <code>Selected Files</code>, you can see the selected file(s) under the folder named <code>Selected Quantification Results</code>.</li>
 </ol>
 <p><center>
@@ -289,11 +290,11 @@ Automatically, <strong>'MassIVE Dataset: Add Reanalysis Results'</strong> should
 <img alt="" src="../img/submit_quant_reanalyses/reanalysis_container_iprg.png" />
 </center></p>
 <h3 id="25-workflow-submission-section">2.5 Workflow Submission section</h3>
-<p>Finally, you are ready to submit. Please type your email to get progress notice and click <strong>Submit</strong> buttom.</p>
+<p>Finally, you are ready to submit. Please type your email to get progress notice and click <strong>Submit</strong> button.</p>
 <p><center>
 <img alt="" src="../img/submit_quant_reanalyses/workflow_submission_done_iprg.png" />
 </center></p>
-<p>Then, you will move to new page, which shows the progress. Please wait. It will take few minutes. After the job is done, you will get the notification email.</p>
+<p>Then, you will move to the new page, which shows the progress. Please wait. It will take a few minutes. After the job is done, you will get the notification email.</p>
 
   <br>
     
