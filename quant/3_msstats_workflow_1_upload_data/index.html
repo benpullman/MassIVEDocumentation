@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Submit MSstats Workflow result - MassIVE Documentation</title>
+    <title>Step1 - Upload Data - MassIVE Documentation</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -32,6 +32,10 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "1.1 Option1: Use Published Quant", url: "#_top", children: [
+          ]},
+          {title: "1.2 Option2: Upload New Quant", url: "#12-option2-upload-new-quant", children: [
+          ]},
         ];
 
     </script>
@@ -65,11 +69,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
+    <div class="wm-article-nav pull-right">
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-link">
+        Step2 - MSstats Workflow
+      </a>
+    </div>
+    
     <div class="wm-article-nav">
-      <a href="../run_msstats_workflow/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../run_msstats_workflow/" class="btn btn-xs btn-link">
-        MSstats Workflow
+        Previous</a><a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
@@ -77,7 +91,15 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <p>Before you run <strong>MSstats workflow</strong>, quantification files(reports)from data processing tools should be ready. </p>
+<h3 id="11-option1-use-published-quant">1.1 Option1: Use Published Quant</h3>
+<p>If you know MSV ID or RMSV ID including quantification files, you can import them in the <strong>MSstats workflow</strong>.</p>
+<p>You are ready to move on to <strong>Step 2: MSstats workflow</strong>.</p>
+<h3 id="12-option2-upload-new-quant">1.2 Option2: Upload New Quant</h3>
+<p>If you have new quantification files, start by uploading your quantification and/or statistical analysis result files to your MassIVE account.</p>
+<p>Uploading data for MassIVE repository submission is the general procedure for any data submittion in MassIVE repository.
+Please follow the instruction on <a href="https://ccms-ucsd.github.io/MassIVEDocumentation/submit_data/">how to upload data for MassIVE repository</a>.</p>
+<p>Then, move on to <strong>Step 2: MSstats workflow</strong>.</p>
 
   <br>
     
@@ -89,11 +111,21 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
+    <div class="wm-article-nav pull-right">
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../3_msstats_workflow_2_run/" class="btn btn-xs btn-link">
+        Step2 - MSstats Workflow
+      </a>
+    </div>
+    
     <div class="wm-article-nav">
-      <a href="../run_msstats_workflow/" class="btn btn-xs btn-default pull-left">
+      <a href="../2_download_files/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../run_msstats_workflow/" class="btn btn-xs btn-link">
-        MSstats Workflow
+        Previous</a><a href="../2_download_files/" class="btn btn-xs btn-link">
+        Download files
       </a>
     </div>
     
@@ -104,7 +136,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="container-fluid wm-page-content">
       <p>
-        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/view_msstats_workflow_result.md">Edit on </a>
+        <a href="https://github.com/CCMS-UCSD/MassIVEDocumentation/blob/master/docs/quant/3_msstats_workflow_1_upload_data.md">Edit on </a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
