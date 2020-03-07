@@ -126,7 +126,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <li>Select category: at the top-left corner, there are boxes for categories. Select (or Click) the box named <code>Annotation File</code>.</li>
 <li>Then, on the right panel, named <code>Selected Files</code>, you can see the selected file under the folder named <code>Selected Annotation File</code>.</li>
 </ol>
-<p>Please repeat for quantification file. Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for <code>Feature</code> category. For <code>MaxQunat</code> output, MSstats requires two quantification report, <code>evidence.txt</code> for <code>Features</code> and <code>proteinGroups.txt</code> for <code>Proteins</code>. Please repeat to select those two files in the corresponding category.</p>
+<p>Please repeat for quantification file(s). Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for <code>Feature</code> category. For <code>MaxQunat</code> output, MSstats requires two quantification report, <code>evidence.txt</code> for <code>Features</code> and <code>proteinGroups.txt</code> for <code>Proteins</code>. Repeat to select those two files in the corresponding category.</p>
 <p><center>
 <img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_selection_popup_final.png" />
 </center></p>
@@ -135,9 +135,38 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_done.png" />
 </center></p>
 <h5 id="222-if-you-use-the-published-quantification-files">2.2.2 If you use the published quantification files</h5>
-<p>select files</p>
-<p>file selection pop-up
-<strong><em>need capture</em></strong></p>
+<p>Select the name of data processing tool you used from the drop-down button in the <code>Tool name</code>. Next, you should select the quantification and annotation files from the published datasets.</p>
+<ol>
+<li>Click '<strong>+</strong>' sign in front of <strong>Select Input Files from MassIVE dataset</strong> option. Then the list of dataset will be shown.</li>
+<li>Type MSV ID in the empty box in the first row and below the column named 'Dataset'. For example, 'MSV000079843'</li>
+<li>Click the <code>Filter</code> button at the top left of the table. Then, the row with MSV ID your typed for the <code>Dataset</code> column is shown. </li>
+<li>Click the <code>Reanalyses</code> button at the very right.</li>
+</ol>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step1.png" />
+</center></p>
+<p>Then, the <code>Dataset Reanalysis Selection</code> pop-up window helps you select the reanalysis including the annotation and quantification files. Find the reanalysis including the annotation and quantification files. If there are more than 5 reanalyses in the datasets, please use double arrow (&lt;&lt; or &gt;&gt;) to see more reanalyses.
+Click the <code>Select</code> button at the very right in the row for the reanalysis you want.</p>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step2.png" />
+</center></p>
+<p>Then, the new pop-up window, <code>File Selection</code>, shows all files in this reanalysis. Let's select the annotation file.</p>
+<ol>
+<li>Find the annotation file. For this example, <em>Choi2017_DDA_MaxQuant_annotation.csv</em> is the annotation file that we want to use. </li>
+<li>Select <strong>Annotation File</strong> from the drop-down button in the <code>Select</code> column.</li>
+<li>Click the <code>Add</code> button at the very right.</li>
+</ol>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step3.png" />
+</center></p>
+<p>Let's select the quantification files. For MaxQuant, two files should be selected : <code>evidence.txt</code> for <code>Features</code> and <code>proteinGroups.txt</code> for <code>Proteins</code>. Select both of them as below.</p>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_step4.png" />
+</center></p>
+<p>Finally, click <code>Close</code> button at the bottom-right on the pop-up window. Now you can see three files are selected in total.</p>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_fromdataset_done.png" />
+</center></p>
 <h3 id="23-comparison-setup">2.3 Comparison Setup</h3>
 <p>Next, you should set up the comparison(s) between conditions of interest. <strong>MSstats workflow</strong> provides four options to select comparions. You should choose one of them.</p>
 <p>-<strong>All vs. All</strong>: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), total six pairwise comparisons will be considered in MSstats : <em>Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4</em>.</p>
