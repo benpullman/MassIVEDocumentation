@@ -129,25 +129,40 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </code></pre>
 <p>Please repeat for quantification file. Most data processing tools report one feature-leve quantified data, which is required for MSstats. It should be selected for <code>Feature</code> category. For <code>MaxQunat</code> output, MSstats requires two quantification report, <code>evidence.txt</code> for <code>Features</code> and <code>proteinGroups.txt</code> for <code>Proteins</code>. Please repeat to select those two files in the corresponding category.</p>
 <p>Once you've selected valid annotation and quantificationi files in the proper categories, click <strong>Fihish Selection</strong> button.</p>
+<p>Select the data processing tool name from the drop-down button. Here, <code>MaxQuant</code> is selected.</p>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_done.png" />
+</center></p>
 <h5 id="222-if-you-want-to-reqnalyze-the-published-quantification-files">2.2.2 If you want to reqnalyze the published quantification files,</h5>
 <p>select files</p>
 <p>file selection pop-up
 <strong><em>need capture</em></strong></p>
 <h3 id="23-comparison-setup">2.3 Comparison Setup</h3>
+<p>Next, you need to set up the comparison(s) between conditions of interest, <strong>MSstats workflow</strong> provides four options to select comparions. You should choose one of them.</p>
 <ol>
-<li>
-<p>All vs All</p>
-</li>
-<li>
-<p>One vs. All</p>
-</li>
-<li>
-<p>Choose Pairs</p>
-</li>
-<li>
-<p>Contrast Matrix</p>
-</li>
+<li>All vs. All: This option will generate all pairwise comparisons between conditions in the annotation file. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4), total six pairwise comparisons will be considered in MSstats : <em>Condition1-Condition2, Condition1-Condition3, Condition1-Condition4, Condition2-Condition3, Condition2-Condition4, Condition3-Condition4</em>.</li>
 </ol>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_contrast_all.png" />
+</center></p>
+<ol>
+<li>One vs. All: This option will generate all pairwise comparisons between one selected condition (base condition) and other conditions in the annotation file. You should select the base condition from the drop-down button, next to <code>One vs. All</code> option. If there are four conditions in the annotation files (Condition1, Condition2, Condition3, Condition4) and you select <em>Condition1</em> for the base condition, total three pairwise comparisons will be considered in MSstats : <em>Condition2-Condition1, Condition3-Condition1, Condition4-Condition1</em>.</li>
+</ol>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_contrast_one.png" />
+</center></p>
+<ol>
+<li>Choose Pairs: This option will allow you to select any pairwise comparison you want. If you select <code>Choose Pairs</code> option, the list of condition will be shown. Select one condition per each panel and then select <code>Add Selected Condition Pair</code> button. Then the comparison(s) you selected will be shown in the box below.</li>
+</ol>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_contrast_choose.png" />
+</center></p>
+<ol>
+<li>Contrast Matrix: If you have the complex linear combination between conditions, you can make your own contrast matrix and use it. The table for contrast matrix can be saved as txt file. It should be uploaded in your account directory at MassIVE.</li>
+</ol>
+<p><center>
+<img alt="" src="../img/run_msstats_workflow/msstats_workflow_contrast_attach.png" />
+</center></p>
 <h3 id="24-advanced-options">2.4 Advanced options</h3>
 <p>There are advanced options for options available. This step is optional. The detailed information about all options is available in <a href="http://msstats.org/msstats-2/">msstats.org</a>.</p>
 <p><center>
