@@ -35,8 +35,8 @@
           {title: "2.1 Workflow Selection", url: "#_top", children: [
           ]},
           {title: "2.2 File Inputs", url: "#22-file-inputs", children: [
-              {title: "2.2.1 If you have new quantification files", url: "#221-if-you-have-new-quantification-files" },
-              {title: "2.2.2 If you use the published quantification files", url: "#222-if-you-use-the-published-quantification-files" },
+              {title: "2.2.1 Option1: New Quant files", url: "#221-option1-new-quant-files" },
+              {title: "2.2.2  Option2: Published Quant files", url: "#222-option2-published-quant-files" },
           ]},
           {title: "2.3 Comparison Setup", url: "#23-comparison-setup", children: [
           ]},
@@ -111,7 +111,8 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </center></p>
 <h3 id="22-file-inputs">2.2 File Inputs</h3>
 <p>You can reanalyze either your new quantification file(s) or published quantification file(s).  If you have new quantification files to analze by MSstats, please go to the section 2.2.1. If you want to use the published quantification file, please go to the section 2.2.2</p>
-<h4 id="221-if-you-have-new-quantification-files">2.2.1 If you have new quantification files</h4>
+<h4 id="221-option1-new-quant-files">2.2.1 Option1: New Quant files</h4>
+<p>If you have new quantification files,</p>
 <ol>
 <li>Select the name of data processing tool you used from the drop-down button in the <code>Tool name</code>.</li>
 <li>Select the files from your user account directory at MassIVE by clicking any of <strong>Select Input Files</strong> buttons:</li>
@@ -134,8 +135,8 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p><center>
 <img alt="" src="../img/run_msstats_workflow/msstats_workflow_file_input_done.png" />
 </center></p>
-<h4 id="222-if-you-use-the-published-quantification-files">2.2.2 If you use the published quantification files</h4>
-<p>Select the name of data processing tool you used from the drop-down button in the <code>Tool name</code>. Next, you should select the quantification and annotation files from the published datasets.</p>
+<h4 id="222-option2-published-quant-files">2.2.2  Option2: Published Quant files</h4>
+<p>If you use the published quantification files, select the name of data processing tool you used from the drop-down button in the <code>Tool name</code>. Next, you should select the quantification and annotation files from the published datasets.</p>
 <ol>
 <li>Click '<strong>+</strong>' sign in front of <strong>Select Input Files from MassIVE dataset</strong> option. Then the list of dataset will be shown.</li>
 <li>Type MSV ID in the empty box in the first row and below the column named 'Dataset'. For example, 'MSV000079843'</li>
@@ -198,20 +199,12 @@ Click the <code>Select</code> button at the very right in the row for the reanal
 <p><center>
 <img alt="" src="../img/run_msstats_workflow/msstats_workflow_adv_opt.png" />
 </center></p>
-<ol>
-<li>
-<p>Advanced Filtering Options: the options for converter functions in MSstats. <code>filter_with_Qvalue</code> or <code>proteinID</code> for many converter functions.</p>
-</li>
-<li>
-<p>Advanced Data Processing Options: the options of imputation and normalization in <code>dataProcess</code> function.</p>
-</li>
-<li>
-<p>Advanced Normalization Options: the option for <code>normalization='globalstandards</code> in <code>dataProcess</code> function.</p>
-</li>
-<li>
-<p>Advanced Feature Selection Options: This is for the options, <code>featureSubset</code> and <code>remove_uninformative_feature_outlier</code> in <code>dataProcess</code> function</p>
-</li>
-</ol>
+<ul>
+<li>Advanced Filtering Options: the options for converter functions in MSstats. <code>filter_with_Qvalue</code> or <code>proteinID</code> for many converter functions.</li>
+<li>Advanced Data Processing Options: the options of imputation and normalization in <code>dataProcess</code> function.</li>
+<li>Advanced Normalization Options: the option for <code>normalization='globalstandards</code> in <code>dataProcess</code> function.</li>
+<li>Advanced Feature Selection Options: This is for the options, <code>featureSubset</code> and <code>remove_uninformative_feature_outlier</code> in <code>dataProcess</code> function</li>
+</ul>
 <h3 id="25-workflow-submission-section">2.5 Workflow Submission section</h3>
 <p>Finally, you are ready to submit. Please type your email to get progress notice and click <strong>Submit</strong> button.</p>
 <p><center>
