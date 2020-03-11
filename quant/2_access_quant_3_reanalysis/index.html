@@ -108,7 +108,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>If you know the reanalysis ID, such as RMSV000000249.1, you can search in the main MassIVE webpage. Also, you can access from either the dataset or the container, for example, MSV000079843 or RMSV000000249, for this reanalysis.</p>
 <p><img alt="" src="../img/access_quant_reanalyses/reanalysis_webpage.png" /></p>
 <h3 id="title">Title</h3>
-<p>It shows the title that the submitter provided in the <code>Add Reanalysis Results</code> workflow. For this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.</p>
+<p>It shows the title that the submitter provided in the <code>Add Reanalysis Results</code> workflow  for this reanalysis, 'MassIVE.Quant-Reanalysis-Skyline'.</p>
 <h3 id="description">Description</h3>
 <p>It shows the description that the submitter wrote in the <code>Add Reanalysis Results</code> workflow.</p>
 <h3 id="reanalyzed-datasets">Reanalyzed Datasets</h3>
@@ -124,7 +124,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p><strong>Condition</strong>: Number of distinct conditions analyzed in this reanalysis. Distinct condition labels are counted across all files submitted in the <code>Metadata</code> category having a "Condition" column in this reanalysis. For this reanalysis, there are four conditions from 'annotation.csv' file in the <code>Metadata</code> category.</p>
 </li>
 <li>
-<p><strong>Biological Replicates</strong>: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the <code>Metadata</code> category having a <code>BioReplicate</code> or <code>Replicate</code> column in this reanalysis. For this reanalysis, there is <code>BioReplicate</code> column in 'annotation.csv' file. Four unique ID for biological replicates are available.</p>
+<p><strong>Biological Replicates</strong>: Number of distinct biological replicates in this reanalysis. Distinct replicate labels are counted across all files submitted in the <code>Metadata</code> category having a <code>BioReplicate</code> or <code>Replicate</code> column in this reanalysis. For this reanalysis, there is a <code>BioReplicate</code> column in 'annotation.csv' file. Four unique IDs for biological replicates are available.</p>
 </li>
 <li>
 <p><strong>Technical Replicates</strong>: Number of distinct technical replicates in this reanalysis. The technical replicate count is defined as the maximum number of times any one distinct combination of condition and biological replicate was analyzed in files submitted in the <code>Metadata</code> category. In the case of fractionated experiments, only the first fraction is considered. For this reanalysis, there is one file, called 'annotation.csv' in the <code>Metadata</code> category. Each biological replicate is assigned in one condition. There are three unique IDs of 'Run' for each biological replicate, which are the technical replicates for the corresponding biological replicate.</p>
