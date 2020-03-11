@@ -106,6 +106,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Then, the rows with 'Condition1' for <code>Condition</code> column are shown. For this example, there are three Runs from 'Condition1'.</p>
 <p><img alt="" src="../img/access_quant_reanalyses/browse_metadata_filtered.png" /></p>
 <p>If you want to remove the filter and to see the whole table, remove 'Condition1' that you typed and click the same <code>Filter</code> button again.</p>
+<p><strong><em>!! Note</em></strong>: <em>Run</em> and <em>Raw.file</em> are identical in most datasets. However, if <em>Run</em> information in quantification files are different than the name of raw files, we recommend to provide both <em>Run</em> and <em>Raw.file</em> in the <code>Metadata</code>. <em>Raw.file</em> refers to the name of .raw file in the original submission of dataset. <em>Run</em> refers to MS run ID in the quantification files.</p>
 <h3 id="browse-quantification-results">Browse Quantification Results</h3>
 <p>You can browse the quantification results for the reanalysis by clicking on <strong>Browse Quantification Results</strong> from the reanalysis webpage. This button is activated only when any tabular-type file(s) is available in the <code>Quantification Results</code> or <code>Statistical Analysis of Quantified Analytes</code> categories.</p>
 <p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_step1.png" /></p>
@@ -125,7 +126,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <li>Type 'sp|D6VTK4|STE2_YEAST' in the empty box in the first row and below the column named 'Protein'.</li>
 <li>Click the <code>Filter</code> button at the top left of the table.</li>
 </ol>
-<p>Then, the rows with 'sp|D6VTK4|STE2_YEAST' for the <code>Protein</code> column are shown. There are six rows with different <code>Label</code>, which shows different pairwise comparisons.</p>
+<p>Then, the rows with 'sp|D6VTK4|STE2_YEAST' for the <code>Protein</code> column are shown. There are six rows with different <code>Label</code>, which shows different pairwise comparisons. The user can customize the names of comparisons, which are shown in the <code>Label</code>, in MSstats. It can be different than the values of <code>Condition</code> in the annotation file. </p>
 <p><img alt="" src="../img/access_quant_reanalyses/browse_quantresult_filtered_protein.png" /></p>
 <p>If you want to remove the filter and to see the whole table, remove 'sp|D6VTK4|STE2_YEAST' that you typed and click the same <code>Filter</code> button again.</p>
 <p>Let's check the rows with significantly different proteins and comparisons.</p>
