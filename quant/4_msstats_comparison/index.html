@@ -181,6 +181,26 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <img alt="" src="../img/msstats_comparison/result_table_venndiagram.png" />
 </center></p>
 <h4 id="42-protein-level-view">4.2 Protein-level view</h4>
+<p>Click <strong>View Differential Abundance Analysis</strong> in the <strong>Status</strong> row.</p>
+<p><center>
+<img alt="" src="../img/msstats_comparison/msstats_comparison_view_differential_analysis.png" />
+</center></p>
+<p>The table below will appear.  This contains all of the quantifiable proteins from all of the analyses combined, and gives the adjusted p-value and the fold change for each protein in each MSstats job used for comparison.</p>
+<p><center>
+<img alt="" src="../img/msstats_comparison/msstats_comparison_differential_analysis_table.png" />
+</center></p>
+<p>We can filter the rows to see all differentially abundant (adjusted p-value &lt; 0.05, issues = 'NA') proteins for a given analysis and see if they are significant in the other analyses.  Applying this filter on the <code>Choi2017_DDNA_Skyline_testResult_byMSstats</code> as below, we see that there are 29 differentially abundant proteins across the 6 conditions.</p>
+<p><center>
+<img alt="" src="../img/msstats_comparison/msstats_comparison_filter_comparison_table.png" />
+</center></p>
+<p>For each protein, we can look at a plot of the fold change for each result and see how they compare by clicking the graph icon on the left of the row.</p>
+<p><center>
+<img alt="" src="../img/msstats_comparison/msstats_comparison_comparison_plot.png" />
+</center></p>
+<p>Finally, by clicking on the double arrows on the left side of the table, we can consider the original outputs from MSstats to see the details of each analysis.</p>
+<p><center>
+<img alt="" src="../img/msstats_comparison/msstats_comparisons_detail_view.png" />
+</center></p>
 
   <br>
     
